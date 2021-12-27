@@ -1,11 +1,13 @@
-import Header from './components/Header';
+import CardList from './components/CardList/CardList';
+import Header from './components/Header/Header';
+
 const App = () => {
+
+
   return (
     <>
-      <Header
-        title="Bienvenido a la PxgApi"
-      />
-
+      <Header />
+      <CardList/>
     </>
   )
 }

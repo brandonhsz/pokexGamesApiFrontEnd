@@ -31,6 +31,7 @@ const Acard = ({ link, name, description, search }: Iprops) => {
           alignItems: 'center',
           cursor: 'pointer',
           margin: '1rem',
+          
         }}
         onClick={() => !search? window.open(link, '_blank') : null}
       >

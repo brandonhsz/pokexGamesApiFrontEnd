@@ -1,5 +1,5 @@
 import { data } from '../../static/data';
-import Acard from '../Card/Card';
+import Acard from './Card';
 import { Container } from './Card.styles';
 
 

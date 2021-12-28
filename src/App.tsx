@@ -1,5 +1,6 @@
 import CardList from './components/CardList/CardList';
 import Header from './components/Header/Header';
+import Info from './components/Info/Info';
 
 const App = () => {
 
@@ -8,6 +9,7 @@ const App = () => {
     <>
       <Header />
       <CardList/>
+      <Info/>
     </>
   )
 }

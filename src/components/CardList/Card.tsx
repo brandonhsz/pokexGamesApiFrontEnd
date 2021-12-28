@@ -3,9 +3,9 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 
-import Input from '../Input/Input';
-import { Img } from '../CardList/Card.styles';
-
+import Input from './Input';
+import { Img } from './Card.styles';
+import Helpers from '../../helpers/helpers';
 
 interface Iprops {
   name: string;
@@ -16,10 +16,7 @@ interface Iprops {
 
 const Acard = ({ link, name, description, search }: Iprops) => {
 
-  const getARandomNumber = (min = 1, max = 898):string => {
-    const id = Math.floor(Math.random() * (max - min + 1)) + min;
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`
-  }
+
 
   const [pokemon, setPokemon] = useState('');
 
@@ -35,9 +32,9 @@ const Acard = ({ link, name, description, search }: Iprops) => {
           cursor: 'pointer',
           margin: '1rem',
         }}
-        onClick={() => !search? window.open('https://pxg-api.herokuapp.com/api/pokemon', '_blank') : null}
+        onClick={() => !search? window.open(link, '_blank') : null}
       >
-        <Img src={getARandomNumber()} alt="All Pokemons" />
+        <Img src={Helpers.getArandomNumber()} alt="All Pokemons" />
 
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" sx={{textAlign: 'center'}}>

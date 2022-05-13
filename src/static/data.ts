@@ -12,7 +12,7 @@ interface ILink{
 }
 
 export const data:Idata = {
-  title: 'Welcome To PXG API',
+  title: 'Bienvenido A PXG API',
   links: [
     {
       name: 'All Pokemon',
